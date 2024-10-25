@@ -8,7 +8,6 @@ import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
 
 public class AppConfig {
-정
     public MemberService memberService() {
         return new MemberServiceImpl(new MemoryMemberRepository());
     }
