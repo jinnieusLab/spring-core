@@ -3,10 +3,12 @@ package hello.core.order;
 import hello.core.discount.DiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService{
 
 //     생성자 주입 시 필요
@@ -15,11 +17,11 @@ public class OrderServiceImpl implements OrderService{
 
     // 생성자 주입
 //    @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-        System.out.println("OrderServiceImpl");
-        this.memberRepository = memberRepository;
-        this.discountPolicy = discountPolicy;
-    }
+//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+//        System.out.println("OrderServiceImpl");
+//        this.memberRepository = memberRepository;
+//        this.discountPolicy = discountPolicy;
+//    }
 
 //    // 수정자 주입 시 필요
 //    private MemberRepository memberRepository;
